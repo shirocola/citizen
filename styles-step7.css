@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background: linear-gradient(to bottom, #094368, #7b94ac);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.received-text {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.big-discount {
+    font-size: 100px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.big-five {
+    font-size: 144px;
+    line-height: 1;
+}
+
+.percent {
+    font-size: 72px;
+    line-height: 1;
+    margin-left: 10px;
+}
+
+.discount-description {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.watch-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.watch {
+    width: 100px;
+    height: auto;
+    padding: 0;
+    margin: 0 -30px; /* ซ้อนกันเล็กน้อย */
+    z-index: 1; /* เพื่อให้ซ้อนกันอย่างถูกต้อง */
+}
+
+.watch:nth-child(odd) {
+    z-index: 2; /* เพิ่ม z-index ให้กับนาฬิกาที่อยู่ในตำแหน่งคี่ */
+}
+
+.small-text {
+    font-size: 16px;
+    color: white;
+}

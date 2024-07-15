@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+    background: linear-gradient(to bottom, #094368, #7b94ac);
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 0 20px;
+    width: 200px;
+    height: 300px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer; /* เพิ่ม cursor pointer เพื่อบ่งบอกว่าการ์ดสามารถคลิกได้ */
+    border: 5px solid white; /* เปลี่ยนขอบการ์ดเป็นสีขาว */
+}
+
+.arrow {
+    background: gray;
+    border: none;
+    font-size: 36px;
+    cursor: pointer;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#birthday-card {
+    width: 200px;
+    text-align: center;
+}
+
+#birthday {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#day-text {
+    font-size: 18px;
+    text-transform: lowercase;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.result-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    select, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}

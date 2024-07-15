@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(to bottom, #094368, #7b94ac);
+    color: white;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.top {
+    justify-content: flex-start;
+    padding-top: 80px;
+    margin-top: 80px;
+}
+
+.center {
+    justify-content: center;
+    flex: 2;
+}
+
+.bottom {
+    justify-content: flex-end;
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+h2.small-text {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.citizen {
+    font-size: 80px;
+    margin-top: 0;
+    margin-bottom: 60px; /* เพิ่มช่องว่างเป็นสองเท่า */
+}
+
+#start {
+    font-size: 80px;
+    cursor: pointer;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px;
+    }
+    h1.citizen {
+        font-size: 60px;
+    }
+    h2.small-text {
+        font-size: 18px;
+    }
+    #start {
+        font-size: 16px;
+    }
+}

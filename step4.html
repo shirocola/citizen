@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 4 - Hand Touch</title>
+    <link rel="stylesheet" href="styles-step4.css">
+    <link rel="stylesheet" href="transition.css">
+</head>
+<body class="fade-in">
+    <div class="container" id="touch-area">
+        <h2>Please touch the screen with your hand to</h2>
+        <h1>Receive a Prediction</h1>
+        <div class="handprint">
+            <img src="assets/HandPrints.jpg" alt="Handprint" />
+        </div>
+        <p id="touch-screen">Please touch the screen with your hand.</p>
+    </div>
+
+    <script>
+        document.getElementById('touch-area').addEventListener('click', function() {
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = 'step5.html';
+            }, 1000);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 1 - Birthday</title>
+    <link rel="stylesheet" href="styles-step1.css">
+</head>
+<body>
+    <div class="container">
+        <h2>What's Your Birthday?</h2>
+        <div class="card-container">
+            <button class="arrow" id="left-arrow">&lt;</button>
+            <div class="card" id="birthday-card" onclick="selectBirthday()">
+                <span id="birthday">MON</span>
+                <p id="day-text">monday</p>
+            </div>
+            <button class="arrow" id="right-arrow">&gt;</button>
+        </div>
+        <p id="select-birthday">Click to select your birthday.</p>
+    </div>
+    <script src="script-step1.js"></script>
+</body>
+</html>

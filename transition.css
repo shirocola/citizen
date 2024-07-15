@@ -1,0 +1,9 @@
+/* การตั้งค่าเริ่มต้นสำหรับการเฟดอิน */
+.fade-in {
+    animation: fadeInAnimation 1s ease-in-out;
+}
+
+@keyframes fadeInAnimation {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
